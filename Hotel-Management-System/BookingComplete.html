@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Complete</title>
+    <style>
+        * { 
+            padding: 0; 
+            margin: 0; 
+            box-sizing: border-box; 
+            font-family: 'Poppins', sans-serif; 
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url("./image/paymentbg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .navbar {
+            height: 80px;
+            display: flex; 
+            align-items: center;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,255,255,1), rgb(170, 170, 170));
+            opacity: 0.9;
+            width: 100%;
+        }
+
+        .logo {
+            height: 75px;
+            margin-left: 30px;
+        }
+
+        .content-wrapper {
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-box {
+            background: rgba(0, 0, 0, 0.6); 
+            padding: 60px 50px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px); 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 1s ease-in-out; 
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 35px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .sub-text {
+            font-size: 20px;
+            color: #cccccc;
+            margin-bottom: 40px;
+        }
+        
+        button {
+            padding: 15px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            background: #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        /* Makes the button pop out and turn blue when hovered */
+        button:hover {
+            background: #0040ff; 
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 64, 255, 0.4);
+        }
+        
+        footer {
+            padding: 15px;
+            text-align: center;
+            background-color: black;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/logo.png" class="logo">
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="message-box">
+                <h2>Thank you for booking with us!</h2>
+                <p class="sub-text">Your confirmation has been sent to your email.</p>
+                <button type="button" onClick="document.location='home.html'">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>By @Four Muskerteers. All rights reserved. Copyright &#169; 2026.</p>
+    </footer>
+
+    <script>
+        alert("Booking Complete");
+    </script>
+</body>
+</html>
